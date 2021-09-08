@@ -72,19 +72,58 @@ int main(){
 
 	if(n1 >= n2){
 				if(n1 >= n3){
-					cout << "The greatest number is : " << n1;
+					cout << "The greatest number is : " << n1 << endl;
 				}
 				else{
-					cout << "The greatest number is : " << n3;
+					cout << "The greatest number is : " << n3 << endl;
 				}
 	}
 	else{
 				if (n2 >= n3){ 
-					cout << "The greatest number is : " <<  n2;
+					cout << "The greatest number is : " <<  n2 << endl;
 					}
 					else{
-						cout << "The greatest number is : " << n3;
+						cout << "The greatest number is : " << n3 << endl; 
 					}
+	}
+
+
+	//Programe to find the days of a week.
+	int day;
+	cout << "Enter the day number: ";
+	cin >> day;
+
+	switch (day){
+		case 1 :
+		cout << "Today is sunday.";
+		break;
+
+		case 2:
+		cout << "Today is monday.";
+		break;
+
+		case 3:
+		cout << "Today is Tuesday.";
+		break;
+
+		case 4:
+		cout << "Today is Wednsday.";
+		break;
+
+		case 5:
+		cout << "Today is Thursday. ";
+		break;
+
+		case 6:
+		cout << "Today is Firday.";
+		break;
+
+		case 7:
+		cout << "Today is saturday.";
+		break;
+		default:
+		cout << "You have entered invalid number.";
+
 	}
 
 		
