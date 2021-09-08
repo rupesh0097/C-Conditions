@@ -55,14 +55,38 @@ int main(){
 		cin >> num3;
 
 	if (num1 >= num2 && num1 >= num3){
-		cout << " This is the largest number is : " << num1;
+		cout << " This is the largest number is : " << num1 << endl << endl;
 	}
 	if (num2 >= num1 && num2 >= num3){
-		cout << " This is the largest number is : " << num2;
+		cout << " This is the largest number is : " << num2 << endl << endl; 
 	}
 	if (num3 >= num1 && num3 >= num2){
-		cout << " This is the largest number is : " << num3;
+		cout << " This is the largest number is : " << num3 << endl << endl;
 	}
+
+	//Finding the largest number among three number using nested if conditions.
+
+	float n1, n2, n3;
+	cout << "Enter three numbers: ";
+	cin >> n1 >> n2 >> n3;
+
+	if(n1 >= n2){
+				if(n1 >= n3){
+					cout << "The greatest number is : " << n1;
+				}
+				else{
+					cout << "The greatest number is : " << n3;
+				}
+	}
+	else{
+				if (n2 >= n3){ 
+					cout << "The greatest number is : " <<  n2;
+					}
+					else{
+						cout << "The greatest number is : " << n3;
+					}
+	}
+
 		
     
 		
